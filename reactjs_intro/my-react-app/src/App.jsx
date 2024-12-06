@@ -12,7 +12,7 @@ import ErrorPage from "./components/RouterPages/ErrorPage";
 import UseParams from "./components/RouterPages/UseParams";
 import {ReactRouter} from "./components/ReactRouter";
 import UseForm from "./components/UseForm";
-
+import ReactRedux from "./components/ReactRedux";
 
 // // Create Context
 // // Wrap the children inside an provider
@@ -53,8 +53,11 @@ function App() {
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <ReactRouter></ReactRouter> */}
+      
 
-      <UseForm></UseForm>
+      {/* <UseForm></UseForm> */}
+
+      <ReactRedux></ReactRedux>
 
 
     </div>
