@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import {userContext,themeContext} from "../App";
+// import {userContext,themeContext} from "../App";
 
 export const UseContext = () => {
     const {name,setName} = useContext(userContext);
