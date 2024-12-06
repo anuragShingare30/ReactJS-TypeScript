@@ -11,6 +11,8 @@ import Profile from "./components/RouterPages/Profile";
 import ErrorPage from "./components/RouterPages/ErrorPage";
 import UseParams from "./components/RouterPages/UseParams";
 import {ReactRouter} from "./components/ReactRouter";
+import UseForm from "./components/UseForm";
+
 
 // // Create Context
 // // Wrap the children inside an provider
@@ -41,7 +43,7 @@ function App() {
         </userContext.Provider>
       </themeContext.Provider> */}
 
-      <Routes>
+      {/* <Routes>
         <Route path="/home" element={<Home />}>
           <Route path="profile" element={<Profile />}/>
         </Route>
@@ -50,8 +52,9 @@ function App() {
         <Route path="/login/:name" element={<UseParams />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-        <ReactRouter></ReactRouter>
+      <ReactRouter></ReactRouter> */}
 
+      <UseForm></UseForm>
 
 
     </div>
