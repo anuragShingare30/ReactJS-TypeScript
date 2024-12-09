@@ -13,6 +13,8 @@ import UseParams from "./components/RouterPages/UseParams";
 import {ReactRouter} from "./components/ReactRouter";
 import UseForm from "./components/UseForm";
 import ReactRedux from "./components/ReactRedux";
+import UseRef from "./components/UseRef";
+import UseMemo from "./components/UseMemo";
 
 // // Create Context
 // // Wrap the children inside an provider
@@ -57,7 +59,11 @@ function App() {
 
       {/* <UseForm></UseForm> */}
 
-      <ReactRedux></ReactRedux>
+      {/* <ReactRedux></ReactRedux> */}
+
+      {/* <UseRef></UseRef> */}
+
+      <UseMemo></UseMemo>
 
 
     </div>

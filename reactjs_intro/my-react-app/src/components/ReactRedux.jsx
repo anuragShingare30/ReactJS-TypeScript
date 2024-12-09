@@ -4,7 +4,6 @@ import {increment, decrement, incrementByAmount,resetValue} from "./Redux/featur
 
 
 const ReactRedux = () => {
-    const [name,setName] =React.useState("");
     const count = useSelector((state) => state.counter.value);
     const dispatch = useDispatch();
 
@@ -19,11 +18,6 @@ const ReactRedux = () => {
     function handleReset(){
         dispatch(resetValue());
     }
-
-    function handleInput(e){
-        setName(e.target.value)
-    }
-
     
 
   return (
@@ -38,10 +32,8 @@ const ReactRedux = () => {
                 -
             </button>
             <button className='border border-black p-2' onClick={handleReset}>Reset</button>
-
-            <input type="text" onChange={handleInput} className='border border-black'/>
         </div>
-        <p className='text-3xl'>{name}</p>
+        
     </div>
   )
 }
