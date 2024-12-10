@@ -15,6 +15,7 @@ import UseForm from "./components/UseForm";
 import ReactRedux from "./components/ReactRedux";
 import UseRef from "./components/UseRef";
 import UseMemo from "./components/UseMemo";
+import UseCallBack from "./components/UseCallBack";
 
 // // Create Context
 // // Wrap the children inside an provider
@@ -63,7 +64,9 @@ function App() {
 
       {/* <UseRef></UseRef> */}
 
-      <UseMemo></UseMemo>
+      {/* <UseMemo></UseMemo> */}
+
+      <UseCallBack></UseCallBack>
 
 
     </div>
