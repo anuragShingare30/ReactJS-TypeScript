@@ -3,22 +3,22 @@ import { useMemo } from 'react';
 
 const UseMemo = () => {
     const [count, setCount] = React.useState(0);
+    let changingValue;
 
     function increment(){
         setCount(count+1);
     }
 
 
-    let testOperation;
     function expensiveTask(num){
         console.log("Runs on every expensive operation");
-        for (let i = 0; i <1000000000; i++) {};
+        for (let i = 0; i <100000000; i++) {};
         return num*2;
     }
-
+    
     console.time();
-    testOperation = useMemo(()=>{expensiveTask(4)},[]);
-    // testOperation = expensiveTask(4);
+    // const testOperation = useMemo(()=>{expensiveTask(4)},[changingValue_that_can_cause_re_render]);
+    const testOperation = expensiveTask(4);
     console.timeEnd();
 
   return (

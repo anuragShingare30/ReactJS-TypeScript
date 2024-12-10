@@ -14,14 +14,14 @@ const UseCallBack = () => {
     return (
         <div className='border border-black p-3 m-10'>
             <h1 className='text-3xl'>Use CallBack Hook</h1>
-        {/* 
+        
       <div>
         <h1>{count}</h1>
         <button onClick={handleClick} className='border border-black'>Add</button>
       </div>
-      <Child name={"click me"} handleClick={handleClick}></Child> */}
+      <Child name={"click me"} handleClick={handleClick}></Child>
 
-            <ExpensiveComp></ExpensiveComp>
+        <ExpensiveComp></ExpensiveComp>
 
         </div>
     )

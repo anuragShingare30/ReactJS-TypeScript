@@ -10,6 +10,8 @@ const UseRef = () => {
             setTime(time => time+1);
         }, 100);
     }
+    
+    
     function handleStop(){
         clearInterval(timeRef.current);
         timeRef.current = null;
