@@ -3,12 +3,12 @@ import {StateHook} from "./components/StateHook";
 import {StateLifting} from "./components/StateLifting"
 import { UseEffect } from "./components/UseEffect";
 import { UseContext } from "./components/useContext";
-import { BrowserRouter, Routes, Route } from "react-router";
 import Home from "./components/RouterPages/Home";
 import About from "./components/RouterPages/About";
 import Dashboard from "./components/RouterPages/Dashboard";
 import Profile from "./components/RouterPages/Profile";
 import ErrorPage from "./components/RouterPages/ErrorPage";
+import { BrowserRouter, Routes, Route } from "react-router";
 import UseParams from "./components/RouterPages/UseParams";
 import {ReactRouter} from "./components/ReactRouter";
 import UseForm from "./components/UseForm";
@@ -17,10 +17,10 @@ import UseRef from "./components/UseRef";
 import UseMemo from "./components/UseMemo";
 import UseCallBack from "./components/UseCallBack";
 
-// // Create Context
-// // Wrap the children inside an provider
-// // Pass the value through provider
-// // Consume data inside children
+// Create Context
+// Wrap the children inside an provider
+// Pass the value through provider
+// Consume data inside children
 // const userContext = createContext();
 // const themeContext = createContext();
 
@@ -58,15 +58,15 @@ function App() {
       <ReactRouter></ReactRouter> */}
       
 
-      {/* <UseForm></UseForm> */}
+      <UseForm></UseForm>
 
       {/* <ReactRedux></ReactRedux> */}
 
       {/* <UseRef></UseRef> */}
 
-      {/* <UseMemo></UseMemo> */}
+      {/* <UseMemo></UseMemo>  */}
 
-      <UseCallBack></UseCallBack>
+      {/* <UseCallBack></UseCallBack> */}
 
 
     </div>

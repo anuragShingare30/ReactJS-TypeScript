@@ -9,7 +9,7 @@ export const UseContext = () => {
         if(theme == "light"){
             setTheme("dark");
         }else{
-            setTheme("light");
+            setTheme("light"); 
         }
     }
 

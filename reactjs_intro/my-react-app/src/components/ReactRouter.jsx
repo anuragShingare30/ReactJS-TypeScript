@@ -23,5 +23,5 @@ export const ReactRouter = () => {
             Move to dash Page
         </button>  
     </div>
-  )
+  ) 
 }

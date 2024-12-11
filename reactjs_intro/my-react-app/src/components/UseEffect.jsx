@@ -41,6 +41,8 @@ export const UseEffect = () => {
     // }, [count,total]);
 
 
+    
+
   return (
     <div className='flex flex-col p-10 gap-2 items-center'>
       <button onClick={handleCount} className='border border-black p-1'>Count</button>

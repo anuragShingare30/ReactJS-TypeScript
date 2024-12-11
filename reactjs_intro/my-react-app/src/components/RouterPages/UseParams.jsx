@@ -11,4 +11,4 @@ const UseParams = () => {
   )
 }
 
-export default UseParams
+export default UseParams;

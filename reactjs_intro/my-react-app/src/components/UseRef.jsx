@@ -20,7 +20,7 @@ const UseRef = () => {
         handleStop();
         setTime(0);
     }
-    // MANIPULATING DOM WITH REF
+    // MANIPULATING DOM WITH REF    
     function handleBtnRef(){
         btnRef.current.style.backgroundColor = "red";
     }
