@@ -1,13 +1,37 @@
+// declaration
 let num : number = 12
 let word: string = "hello";
+
 
 // UNION TYPES
 let union : string | number;
 union = 12
 union = "anu"
 
+
+// only out off this value is allowed for role variable
+let role:"admin"|"user"|"super-admin";
+
+
 // ARRAY
 let numsArray : string[] = ["hello","rohit","bhai"] 
+
+interface userInfo {
+    id:number;
+    title:string;
+}
+
+const userInfoArr:Array<userInfo> = [
+    {
+        id:1,
+        title:"let"
+    },
+    {
+        id:2,
+        title:"have"
+    }
+]
+
 
 
 
@@ -31,7 +55,7 @@ type UserType = {
     theme:"light"|"dark"
 }
 
-let getUser = (user:UserType):UserType =>{
+let getUser = (user:UserType) =>{
     let newUser:UserType = {
         username:user.username,
         age:user.age,
@@ -74,7 +98,7 @@ interface IPost1<T> {
 }
 
 let Post1:IPost1<String> = {
-    id:1,
+    id: 1,
     username:"rohiy",
     post:"hola amigos",
     extra:["helel"]
