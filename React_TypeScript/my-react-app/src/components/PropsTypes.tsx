@@ -1,5 +1,4 @@
 
-
 // always ensure if props are present they should defined 
 // either we can use interface or types
 
@@ -13,12 +12,11 @@ export type Props = {
     methdo:string;
 }
 
-export const PropsTypes = (props:propsType) => {
+export const PropsTypes = ({value,method}:propsType) => {
   return (
     <div>
-      <h1>{props.value}</h1>
-      <h1>{props.method}</h1>
+      <h1>{value}</h1>
+      <h1>{method}</h1>
     </div>
   )
 }
-
