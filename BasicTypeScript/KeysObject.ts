@@ -15,6 +15,7 @@ const obj2: Record<number,string> = {};
 
 const addValue = (_id:number,value:string)=>{
   obj[_id] = value;
+  obj2[2]="sdd";
 }
 
 const deleteValue = (_id:number) =>{

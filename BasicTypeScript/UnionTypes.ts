@@ -12,8 +12,10 @@ type userRole = {
 const userInfo:userRole = {
   id:1,
   firstName:"anurag",
-  role:"admin"
+  role:"user"
 }
+
+
 
 // Narrowing down union type
 
